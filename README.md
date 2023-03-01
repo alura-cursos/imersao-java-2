@@ -14,4 +14,7 @@ O código da Aula 1 pode ser encontrado na branch [aula1](https://github.com/alu
 ## Aula 2
 
 O código da Aula 2 pode ser encontrado na branch [aula2](https://github.com/alura-cursos/imersao-java-2/tree/aula2) no diretório `alura-stickers`.
-    
+
+## Aula 3
+
+O código da Aula 3 pode ser encontrado na branch [aula3](https://github.com/alura-cursos/imersao-java-2/tree/aula3) no diretório `alura-stickers`.
