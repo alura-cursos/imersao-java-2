@@ -6,13 +6,10 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        // fazer uma conexão HTTP e buscar os top 250 filmes
+        API api = API.IMDB_TOP_SERIES;
 
-        // String url = "https://imdb-api.com/en/API/Top250Movies/k_x3pev8lm";
-        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
-
-        String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2022-06-12&end_date=2022-06-14";
-        ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
+        String url = api.getUrl();
+        ExtratorDeConteudo extrator = api.getExtrator();
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
