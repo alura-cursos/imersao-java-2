@@ -20,7 +20,7 @@
 
 
 <p>
-O projeto tem como ojetivo consumir microserviços de uma  API  dos top 250 filmes iniciamente , no qual será utilizada a [IMDb-API](https://imdb-api.com/api). 
+O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filmes, no qual será utilizada a IMDb-API. 
 </p>
 
 <h2>💻Tecnologias Utilizadas</h2>
