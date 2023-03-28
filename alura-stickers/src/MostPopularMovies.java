@@ -34,15 +34,17 @@ public class MostPopularMovies {
        
         for (int i = 0; i < 10;  i ++) {
             Map<String,String> filme = listaDeFilmes.get(i);
-            System.out.println("\u001b[38;2;255;255;255m Titulo: \u001b[m" + filme.get("title"));
-            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;122;228m URL imagem: \u001b[m" + filme.get("image"));
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;100;228m -> Titulo: \u001b[m" + filme.get("title"));
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;100;228m -> URL imagem: \u001b[m" + filme.get("image"));
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;100;228m -> Ano: \u001b[m"+ filme.get("year"));
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;100;228m -> Classificacao: \u001b[m"+ filme.get("imDbRating"));
             double classificacao  = Double.parseDouble(filme.get("imDbRating")); 
-            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;122;228m Ano: \u001b[m"+ filme.get("year"));
             int estrelas = (int) classificacao;
-            System.out.println("classificacao:");
+            
             for (int j = 1; j <= estrelas; j++) {
                 
-                System.out.print("⭐");
+                System.out.print(" ⭐ ");
+               
             }
             System.out.println("\n");
 
