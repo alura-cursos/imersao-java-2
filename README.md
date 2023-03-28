@@ -21,23 +21,22 @@
 Desafio apresentado 
 </p>
 
-<h2>Tecnologias utilizadas<h2>
+<h2>Tecnologias utilizadas</h2>
 
 
 
-<h2>Funcionalidades e Demonstração da Aplicação<h2>
+<h2>Funcionalidades e Demonstração da Aplicação</h2>
 
 
 
-<h2>👩‍ Desenvolvido Por<h2>
-
+<h2>👩‍Desenvolvido Por</h2>
 
 <p>
     Realizado o desafio por [Tuane](https://www.linkedin.com/in/tuane-mendes/) 💜 
-<p>
+</p>
 
 
-<h2>Pessoas Contribuidoras<h2>
+<h2>Pessoas Contribuidoras</h2>
 
 
 ![GitHub Org's stars](https://img.shields.io/github/stars/tuanemendes?style=social)
