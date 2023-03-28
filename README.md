@@ -20,28 +20,26 @@
 
 
 <p>
-O projeto tem como ojetivo consumir microserviços de uma  API  dos top 250 filmes iniciamente , no qual será utilizada a [IMDb-API](https://imdb-api.com/api). 
+O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filmes, no qual será utilizada a IMDb-API. 
 </p>
 
 <h2>💻Tecnologias Utilizadas</h2>
 
 ✅ Editor de código VsCode<br>
 ✅ [Coding Pack para Java](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java)<br> 
-✅ [Navegador Opera](https://www.opera.com/pt) <br> 
-✅(IMDb-API)[https://imdb-api.com/api]
+✅ [Proton VPN](https://protonvpn.com/) <br> 
+✅ [IMDb-API](https://imdb-api.com/api)
 
 <h2>💻Funcionalidades e Demonstração da Aplicação</h2>
 
 <p>
- 1-  Foi realizadoo cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies,a o site não funcionava dizendo estar fora do ar, para resolução do problema, obtive duas alternativas utilizar outros links de outras api e uma segunda solução encontrada foi  utilizar o navegador [Opera]((https://www.opera.com/pt) ) que possui uma vpn integrada no browser no qual foi possível acessar a o link do site (IMDb-API)[https://imdb-api.com/api].
+1-  Foi realizadoo cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies,a o site não funcionava dizendo estar fora do ar, para resolução do problema, obtive duas alternativas utilizar outros links de outras APIs e uma segunda solução foi a utilização de uma VPN  que no qual foi possível acessar a o link do site IMDb-API.
 
-2-   Na classe main foi criado a  conexão com o  http para buscar o top 250 filmes. 
+2- Na classe main foi criado a  conexão com o  http para buscar o top 250 filmes. 
 
-3-  Foi criado uma JsonParser para fazer o processo de separação dos dados. 
+3- Foi criado uma JsonParser para fazer o processo de separação dos dados. 
 
 4- Criado um for para trazer a lista com manipulação do dados titulo , poster, classificação.
-
-
 </p>
 
 
