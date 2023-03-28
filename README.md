@@ -33,7 +33,11 @@ Desafio apresentado
 
 <h2>👩‍ Desenvolvido Por<h2>
 
-Realizado o desafio por [Tuane](https://www.linkedin.com/in/tuane-mendes/) 💜
+<p>
+
+    Realizado o desafio por [Tuane](https://www.linkedin.com/in/tuane-mendes/) 💜 
+
+<p>
 
 
 <h2>Pessoas Contribuidoras<h2>
@@ -50,4 +54,5 @@ Realizado o desafio por [Tuane](https://www.linkedin.com/in/tuane-mendes/) 💜
 
 
 
-![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
+
+![GitHub Org's stars](https://img.shields.io/github/stars/tuanemendes?style=social)
