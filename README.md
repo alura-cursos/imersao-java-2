@@ -1,6 +1,6 @@
 # Imersão Java
 
-<h1 align="center"> Desafio:Java-stickers</h1>
+<h1 align="center">Java-stickers</h1>
 
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
@@ -18,9 +18,7 @@
 
 
 <p>
-
 Desafio apresentado 
-
 </p>
 
 <h2>Tecnologias utilizadas<h2>
@@ -33,26 +31,13 @@ Desafio apresentado
 
 <h2>👩‍ Desenvolvido Por<h2>
 
+
 <p>
-
     Realizado o desafio por [Tuane](https://www.linkedin.com/in/tuane-mendes/) 💜 
-
 <p>
 
 
 <h2>Pessoas Contribuidoras<h2>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ![GitHub Org's stars](https://img.shields.io/github/stars/tuanemendes?style=social)
