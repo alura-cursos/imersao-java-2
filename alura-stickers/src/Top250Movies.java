@@ -36,8 +36,6 @@ public class Top250Movies {
             String urlImagem = filme.get("image");
             String titulo = filme.get("title");
 
-           
-
             InputStream inputStream = new URL(urlImagem).openStream();
             String nomeArquivo = "saida/" + titulo + ".png";
 
