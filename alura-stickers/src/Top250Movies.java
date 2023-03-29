@@ -6,7 +6,6 @@ import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 import java.util.Map;
 
-import javax.swing.text.html.HTMLEditorKit.Parser;
 
 public class Top250Movies {
     public static void main(String[] args) throws Exception {
