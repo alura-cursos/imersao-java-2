@@ -6,7 +6,6 @@ import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 import java.util.Map;
 
-
 public class MostPopularMovies {
     public static void main(String[] args) throws Exception {
         //Desafio dia 01 
@@ -25,11 +24,14 @@ public class MostPopularMovies {
        
        
         for (Map<String,String> filme : listaDeFilmes) {
-            System.out.println(filme.get("title"));
-            System.out.println(filme.get("image"));
-            System.out.println(filme.get("imDbRating"));
-            System.out.println(filme.get("year"));
-            System.out.println("");
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;122;228m Título: \u001b[m" + filme.get("title"));
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;122;228m URL imagem: \u001b[m" + filme.get("image"));
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;122;228m Classificação: \u001b[m" + filme.get("imDbRating"));
+            System.out.println("\u001b[38;2;255;255;255m \u001b[48;2;42;122;228m Ano: \u001b[m"+ filme.get("year"));
+            System.out.println("⭐⭐⭐⭐⭐");
+
+           
+
         }
 
         
