@@ -48,11 +48,6 @@ public class MostPopularMovies {
             }
             System.out.println("\n");
 
-            
-           
-
-           
-
         }
 
         
