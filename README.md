@@ -12,12 +12,12 @@
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
 * [Desafios Dia 01](#desafios-dia-01)
+* [Desafios Dia 02](#desafios-dia-02)
 * [Desenvolvido Por](#desenvolvido-por)
 * [Pessoas Contribuidoras](#pessoas-contribuidoras)
 
 
 <h2>💻 Descrição do Projeto</h2>
-
 
 <p>
 O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filmes, no qual será utilizada a IMDb-API. 
@@ -45,11 +45,18 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 
 <h2>🛠Desafios Dia 01</h2>
 
-
 * Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.<br>
 * Usar sua criatividade para deixar a saída dos dados mais bonitinha: usar emojis com código UTF-8, mostrar a nota do filme como estrelinhas, decorar o terminal com cores, negrito e itálico usando códigos ANSI, e mais!<br> 
 * Colocar a chave da API do IMDB em algum lugar fora do código como um arquivo de configuração (p. ex, um arquivo .properties) ou uma variável de ambiente.<br>
 
+<h2>🛠Desafios Dia 02</h2>
+
+* Redimencionar as imagens para ter um maior resolução.<br>
+* Criar diretório de saída das imagens, se ainda não existir.<br>
+* Centralizar o texto na figurinha.<br>
+* Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.<br>
+* Colocar contorno (outline) no texto da imagem.<br>
+* Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha e fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.
 
 <h2>👩‍Desenvolvido Por</h2>
 
