@@ -14,7 +14,7 @@ import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
-public class GeradorDeFigurinhas {
+public class StickerGenerator {
 
     public void criarImagem(InputStream inputStream, String nomeArquivo, String texto,InputStream inputImagemSobreposicao) throws Exception {
         // leitura da imagem 

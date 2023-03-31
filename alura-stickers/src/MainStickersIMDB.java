@@ -13,7 +13,7 @@ import java.util.Properties;
 import java.net.URL;
 
 
-public class MainStrickes {
+public class MainStickersIMDB {
     public static void main(String[] args) throws Exception {
     
         //fazer uma conexão http e buscar os top 250 filmes 
@@ -24,9 +24,9 @@ public class MainStrickes {
         properties.load(inputStreamConfig);
         String apiKey = properties.getProperty("IMDB_API_KEY");
         String url = "https://imdb-api.com/en/API/MostPopularMovies/" + apiKey;
-        URI endereco = URI.create(url);
+        URI address = URI.create(url);
         var client = HttpClient.newHttpClient(); 
-        var request = HttpRequest.newBuilder(endereco).GET().build();
+        var request = HttpRequest.newBuilder(address).GET().build();
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
         String body = response.body();
         
@@ -34,7 +34,7 @@ public class MainStrickes {
         
         var jsonParser = new JsonParser();
         List<Map<String, String>> listaDeFilmes = jsonParser.parse(body); 
-        var gerarImagem = new GeradorDeFigurinhas();
+        var gerarImagem = new StickerGenerator();
 
         var diretorioSaida = new File("stickers/");
         diretorioSaida.mkdir();
@@ -62,10 +62,10 @@ public class MainStrickes {
             String textoFigurinha;
             InputStream myImage;
             if(classificacao >= 8){
-                textoFigurinha = textoSaudacao + " ESSE HYPE";
+                textoFigurinha = textoSaudacao + " ESSE HYPOU";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-muito-feliz.png"));
             }else if(classificacao <= 6){
-                textoFigurinha = textoSaudacao + " ESSE CHUCHU";
+                textoFigurinha = textoSaudacao + " ESSE PASSA";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-feliz.png"));
             }else{
                 textoFigurinha = textoSaudacao + " ESSE FLOPOU";
