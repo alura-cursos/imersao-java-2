@@ -31,9 +31,14 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 ✅ [IMDb-API](https://imdb-api.com/api)
 
 <h2>💻Funcionalidades e Demonstração da Aplicação</h2>
-
 <p>
-1-  Foi realizadoo cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies,a o site não funcionava dizendo estar fora do ar, para resolução do problema, obtive duas alternativas utilizar outros links de outras APIs e uma segunda solução foi a utilização de uma VPN  que no qual foi possível acessar a o link do site IMDb-API.
+    A inversão são de 5 dias de códificação em java com a implementação de desafios.  
+</p>
+
+<h4> Aula 1 </h4> 
+<p>
+
+1-  Foi realizadoo cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies,a o site não funcionava dizendo estar fora do ar, para resolução do problema, obtivo duas alternativas utilizar outros links de outras APIs e uma segunda solução foi a utilização de uma VPN  que no qual foi possível acessar a o link do site IMDb-API.
 
 2- Na classe main foi criado a  conexão com o  http para buscar o top 250 filmes. 
 
@@ -41,6 +46,20 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 
 4- Criado um for para trazer a lista com manipulação do dados titulo , poster, classificação.
 </p>
+
+<h4> Aula 2 </h4>
+<p>
+
+
+</p>
+
+
+ <h4> Aula 3 </h4> 
+ <p>
+
+ </p>
+
+
 
 
 <h2>🛠Desafios Dia 01</h2>
