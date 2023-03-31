@@ -39,7 +39,7 @@ public class MainStrickes {
         var diretorioSaida = new File("stickers/");
         diretorioSaida.mkdir();
        
-        for ( int i = 0 ; i <= 8; i++ ) {
+        for ( int i = 8 ; i <= 12; i++ ) {
             Map<String,String> filme = listaDeFilmes.get(i);
             String urlImagem = filme.get("image");
             String titulo = filme.get("title");
@@ -63,12 +63,15 @@ public class MainStrickes {
             InputStream myImage;
             if(classificacao >= 8){
                 textoFigurinha = textoSaudacao + " ESSE HYPE";
+                myImage = new FileInputStream(new File("img-sobreposicao/gatinho-muito-feliz.png"));
             }else if(classificacao <= 6){
                 textoFigurinha = textoSaudacao + " ESSE CHUCHU";
+                myImage = new FileInputStream(new File("img-sobreposicao/gatinho-feliz.png"));
             }else{
                 textoFigurinha = textoSaudacao + " ESSE FLOPOU";
+                myImage = new FileInputStream( new File("img-sobreposicao/gatinho-marrento.png"));
             }
-            gerarImagem.criarImagem(inputStream, nomeArquivo,textoFigurinha);
+            gerarImagem.criarImagem(inputStream, nomeArquivo,textoFigurinha,myImage);
 
            // System.out.println(filme.get("title"));
             System.out.println(filme.get("image"));

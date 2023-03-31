@@ -16,7 +16,7 @@ import javax.imageio.ImageIO;
 
 public class GeradorDeFigurinhas {
 
-    public void criarImagem(InputStream inputStream, String nomeArquivo, String texto) throws Exception {
+    public void criarImagem(InputStream inputStream, String nomeArquivo, String texto,InputStream inputImagemSobreposicao) throws Exception {
         // leitura da imagem 
         //InputStream inputStream = new FileInputStream(new File("alura-stickers/entrada/filme-maior.jpg"));
         //InputStream inputStream = new URL ("https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@.jpg").openStream();
@@ -34,8 +34,12 @@ public class GeradorDeFigurinhas {
         Graphics2D graphics2d = (Graphics2D) novaImagem.getGraphics();
         graphics2d.drawImage(imagemOriginal, 0, 0,null);
 
+        BufferedImage imagemSobreposicao = ImageIO.read(inputImagemSobreposicao);
+        int posicaoImgSobreposicaoY = novaAltura - imagemSobreposicao.getHeight()+20;
+        graphics2d.drawImage(imagemSobreposicao, 20, posicaoImgSobreposicaoY,null);
+
         //configurar a fonte 
-        var  fonte = new Font("Impact",Font.BOLD, 100); 
+        var  fonte = new Font("Impact",Font.BOLD, 140); 
         graphics2d.setFont(fonte);
         graphics2d.setColor(Color.ORANGE);
 
@@ -58,7 +62,7 @@ public class GeradorDeFigurinhas {
 
         transform.translate( eixoX,eixoY);
         graphics2d.setTransform(transform);
-        var outlineStroke =  new BasicStroke(largura * 0.004f);
+        var outlineStroke =  new BasicStroke(largura * 0.003f);
         graphics2d.setStroke(outlineStroke);
         graphics2d.setColor(Color.BLACK);
         graphics2d.draw(shape);
