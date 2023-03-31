@@ -32,10 +32,7 @@ public class JsonParser {
                 String valor = matcherAtributosJson.group(2);
                 atributosItem.put(atributo, valor);
             }
-            // alteração da imagem para maior resolução 
-            String imageUrl = atributosItem.get("image");
-            imageUrl = imageUrl.replaceAll("(_V\\d+_UX\\d+)_CR\\d+,\\d+,\\d+,\\d+_AL_.", "");
-            atributosItem.put("image", imageUrl);
+         
             dados.add(atributosItem);
         }
 
