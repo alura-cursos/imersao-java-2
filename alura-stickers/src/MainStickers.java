@@ -16,7 +16,7 @@ public class MainStickers {
         ContentExtractorNASA extractorNASA = new ContentExtractorNASA();
         List<Content> contents = extractorNASA.getContent(json);
         //ContentExtractorIMDB extractorIMDB = new ContentExtractorIMDB();
-        //List<Content> content = 
+        //List<Content> contents = extractorIMDB .getContent(json);
 
         var generatImage = new StickerGenerator();
         
@@ -24,11 +24,8 @@ public class MainStickers {
         var diretorioSaida = new File("stickers/");
         diretorioSaida.mkdir();
        
-        for ( int i = 0 ; i < 3; i++ ) {
+        for ( int i = 0 ; i < 7; i++ ) {
             Content content = contents.get(i);
-
-            
-            //double classificacao = Double.parseDouble(content.getClassificao());
 
             InputStream inputStream = new URL(content.getUrlImage()).openStream();
             String nomeArquivo = "stickers/" + content.getTitle() + ".png";
@@ -46,14 +43,14 @@ public class MainStickers {
             
             String textoFigurinha;
             InputStream myImage;
-            if(content.getClassification() >= 8){
-                textoFigurinha = textoSaudacao + " ESSE HYPOU";
+            if(content.getClassification() >= 8.0){
+                textoFigurinha = textoSaudacao + " HYPOU";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-muito-feliz.png"));
-            }else if(content.getClassification() <= 6){
-                textoFigurinha = textoSaudacao + " ESSE PASSA";
+            }else if(content.getClassification() <= 6.0){
+                textoFigurinha = textoSaudacao + " DE BOA";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-feliz.png"));
             }else{
-                textoFigurinha = textoSaudacao + " ESSE FLOPOU";
+                textoFigurinha = textoSaudacao + " FLOPOU";
                 myImage = new FileInputStream( new File("img-sobreposicao/gatinho-marrento.png"));
             }
             generatImage.criarImagem(inputStream, nomeArquivo,textoFigurinha,myImage);

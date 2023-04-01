@@ -24,8 +24,6 @@ public class Content {
     public String getUrlImage() {
         return urlImage;
     }
-
-
     public double getClassification() {
         return classification;
     }

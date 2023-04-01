@@ -20,7 +20,9 @@ public class ContentExtractorIMDB {
             String title = attributes.get("title");
             String urlImage = attributes.get("image")
                     .replaceAll("(@+)(.*).jpg$","$1.jpg");
-            double imDbRating = Double.parseDouble(attributes.get("imDbRating"));
+            String imDbRatingStr = attributes.get("imDbRating");
+            double imDbRating = imDbRatingStr.isEmpty() ? 0.0 : Double.parseDouble(imDbRatingStr);
+            //double imDbRating = Double.parseDouble(attributes.get("imDbRating"));
                 
             //urlImage.replaceAll("(_V\\d+_UX\\d+)_CR\\d+,\\d+,\\d+,\\d+_AL_.", "");
            

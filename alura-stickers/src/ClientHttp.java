@@ -24,11 +24,12 @@ public class ClientHttp {
         //String url = "https://imdb-api.com/en/API/MostPopularMovies/" + apiKeyImdb;
 
         //nasa
-        //String apiKeyNasa = properties.getProperty("NASA_API_KEY");
-        //String url = "https://api.nasa.gov/planetary/apod?api_key=" + apiKeyNasa;
+        String apiKeyNasa = properties.getProperty("NASA_API_KEY");
+        String dateNasa = properties.getProperty("DATA_NASA");
+        String url = "https://api.nasa.gov/planetary/apod?api_key=" + apiKeyNasa + dateNasa;
 
-        String test = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/NASA-APOD.json";
-        URI address = URI.create(test);
+        //String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/NASA-APOD.json";
+        URI address = URI.create(url);
         var client = HttpClient.newHttpClient(); 
         var request = HttpRequest.newBuilder(address).GET().build();
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());

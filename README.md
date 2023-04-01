@@ -49,14 +49,15 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 
 <h4> Aula 2 </h4>
 <p>
-
-
+     Aula de Manipulação de imagem para gerar stickers pra whatsapp, com a utilização de bibliotecas Java para modificar tamanho da imagem , buscando  as imagens  da API  dos filmes passadno textos dentro dessas imagens
 </p>
-
 
  <h4> Aula 3 </h4> 
  <p>
+    Aula de refatoração do código com foco em orientação obejtos para deixar mais seguro, manutenivel e organizado para  gerar  facilidade para outros desenvolvedores conseguir entender o código, foi separado as seguintes classes:
 
+
+     Com essa refatoração sendo possivel utilização de outras API pra gerar outros stickers como foi utilizado a API da NASA. 
  </p>
 
 

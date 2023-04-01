@@ -39,7 +39,7 @@ public class StickerGenerator {
         graphics2d.drawImage(imagemSobreposicao, 20, posicaoImgSobreposicaoY,null);
 
         //configurar a fonte 
-        var  fonte = new Font("Impact",Font.BOLD, 140); 
+        var  fonte = new Font("Impact",Font.BOLD, 100); 
         graphics2d.setFont(fonte);
         graphics2d.setColor(Color.ORANGE);
 
