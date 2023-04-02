@@ -24,7 +24,7 @@ public class LanguageController {
 
     @GetMapping
     public List<Language> getlanguageList(){
-        List<Language> languages = languageRepository.findAll();
+        List<Language> languages = languageRepository.findByOrderByRanking();
         return languages;
     }
 
@@ -50,7 +50,6 @@ public class LanguageController {
         Language languageUpdate = languageRepository.save(language);
         return languageUpdate;
     }
-
 
     @DeleteMapping("/{idLanguage}")
     public void deleteLanguage(@PathVariable String idLanguage ){

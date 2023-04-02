@@ -176,6 +176,15 @@ Outra ferramenta muito importante para o desenvolvimento é o postman que é  so
 * Devolver a listagem ordenada pelo ranking;
 * Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST; 
 
+<p>
+O desafio de ordenação é algo realmente muito simples , apenas criando uma linha de código na classe LanguageRepository foi possvel criar um método  findByOrderByRanking para ordernada a lista da linguagens.  
+</p>
+
+<div align="center">
+    <img  src="https://user-images.githubusercontent.com/54903202/229381422-7decab87-5214-4d1f-aa87-bf5b2fa55a51.png" width="700" height="350" alt="Terminal Exception">
+</div>
+
+
 
 
 <h2>👩‍Desenvolvido Por</h2>
