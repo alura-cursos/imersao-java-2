@@ -16,7 +16,7 @@ public class MainStickers {
         properties.load(inputStreamConfig);
 
         //buscar a url da API
-        API api = API.IMDB_MOST_POPULAR;
+        API api = API.NASA_APOD;
         String url;
         if(api.equals(API.NASA_APOD)){
             //API Nasa
