@@ -3,21 +3,37 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.time.LocalTime;
 import java.util.List;
+import java.util.Properties;
 import java.net.URL;
 
 
 public class MainStickers {
     public static void main(String[] args) throws Exception {
     
-        ClientHttp clientHttp = new ClientHttp();
-        String json = clientHttp.getlistDados();
         
-       
-        ContentExtractorNASA extractor = new ContentExtractorNASA();
-        
-        //ContentExtractorIMDB extractorIMDB = new ContentExtractorIMDB();
-     
+        Properties properties = new Properties();
+        InputStream  inputStreamConfig = new FileInputStream("config.properties");
+        properties.load(inputStreamConfig);
 
+        //buscar a url da API
+        API api = API.NASA_APOD;
+        String url;
+        if(api.equals(API.NASA_APOD)){
+            //API Nasa
+            String apiKeyNasa = properties.getProperty("NASA_API_KEY");
+            String dateNasa = properties.getProperty("DATA_NASA");
+            url = api.getUrl() + apiKeyNasa + dateNasa;
+
+        }else{
+            String apiKeyImdb = properties.getProperty("IMDB_API_KEY");
+             url = api.getUrl() + apiKeyImdb;
+        }
+    
+        ContentExtractor extractor = api.getExtractor();
+        
+        ClientHttp clientHttp = new ClientHttp();
+        String json = clientHttp.getlistDados(url);
+     
         //manipula os dados 
         List<Content> contents = extractor.getContent(json);
         var generatImage = new StickerGenerator();
@@ -57,7 +73,7 @@ public class MainStickers {
             }
             generatImage.criarImagem(inputStream, nomeArquivo,textoFigurinha,myImage);
 
-        
+            System.out.println(content.title());
             System.out.println("");
         }
 
