@@ -105,7 +105,7 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 * Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra.<br> 
 * Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado. 
 
-No desafio de transforma a class para record, foi nessario criar outro contrutor para ter somente dois atribudos pois na record que foi criado  tinha 3 atributos. 
+No desafio de transformar a class para record, foi necessário criar outro construtor para ter somente dois atribudos pois na record que foi criado tinha três atributos. 
 
 ``` java 
   public record Content(String title,String urlImage,double classification) {
