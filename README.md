@@ -1,10 +1,17 @@
-# Imersão Java
 
-<h1 align="center">Java-stickers</h1>
+<div align="center">
+    <img src="https://www.alura.com.br/assets/img/imersao-java/imersao-logo.1676983691.svg"width="250" height="80" alt="Imersão Alura"/>
+</div>
 
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+<h1>👩‍💻 Java-stickers</h1>
 
+<div align="center">
+
+![Badge em Desenvolvimento ](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge )
+![GitHub Org's stars](https://img.shields.io/github/stars/tuanemendes?style=social)
+
+</div>
 <h2>Índice</h2>
 
 * [Descrição do Projeto](#descrição-do-projeto)
@@ -40,19 +47,16 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 
 <h2>💻Funcionalidades e Demonstração da Aplicação</h2>
 <p>
-    A inversão são de 5 dias de códificação em java com a implementação de desafios.  
+    A inversão são de 5 dias de códificação em java criação de classes, conceitos de herença, polimorfismo, a utilização posterior com a utilização do framework spring com a criação de um API para sser consumida pelo próprio gerador de stickers,   implementação de desafios.  
 </p>
 
-<h2>Aula 1</h2> 
+<h2>👩‍🏫👨‍🏫Aula 1</h2> 
 <p>
 
-1-  Foi realizadoo cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies,a o site não funcionava dizendo estar fora do ar, para resolução do problema, obtivo duas alternativas utilizar outros links de outras APIs e uma segunda solução foi a utilização de uma VPN  que no qual foi possível acessar a o link do site IMDb-API.
-
-2- Na classe main foi criado a  conexão com o  http para buscar o top 250 filmes. 
-
-3- Foi criado uma JsonParser para fazer o processo de separação dos dados. 
-
-4- Criado um for para trazer a lista com manipulação do dados titulo , poster, classificação.
+Na primeira aula Foi realizado cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies, o site não funcionava dizendo estar fora do ar como o satus 403, para resolução do problema, foi passado pelo time da alura um link pra buscar os dados e um segunda que encontrei foi utilizar uma VPN  que no qual foi possível acessar a o link do site IMDb-API.
+Na classe main foi criado a  conexão com o  http para buscar o top 250 filmes. 
+Foi criado uma JsonParser para fazer o processo de separação dos dados. 
+Criado um for para trazer a lista com manipulação do dados titulo , poster, classificação.
 </p>
 <h3>🛠Desafios Dia 01</h3>
 
@@ -68,7 +72,7 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
     <img  src="https://user-images.githubusercontent.com/54903202/229263265-7e4ace23-5d1d-4c04-b7fd-cf4b2cafb84e.png" width="650" height="100" alt="Terminal Estrelas">
 </div>
 
-<h2>Aula 2</h2>
+<h2>👩‍🏫 👨‍🏫Aula 2</h2>
 <p>
      Aula de Manipulação de imagem para gerar stickers pra whatsapp, com a utilização de bibliotecas Java para modificar tamanho da imagem , buscando  as imagens  da API  dos filmes passadno textos dentro dessas imagens
 </p>
@@ -86,7 +90,7 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
     <img  src="https://user-images.githubusercontent.com/54903202/229262614-e9b22466-1b2d-4f17-952a-f2cdfef23ad4.png" width="250" height="380" alt="Figura IMDB">
 </div>
 
-<h2>Aula 3</h2> 
+<h2>👩‍🏫 👨‍🏫Aula 3</h2> 
 <p>
  Aula de refatoração do código com foco em orientação obejtos para deixar mais seguro, manutenivel e organizado para  gerar  facilidade para outros                  desenvolvedores conseguir entender o código, foi separado as seguintes classes:
 </p>
@@ -152,7 +156,7 @@ Realização do teste da exception criada.
 
  ```
  
-<h2>Aula 4</h2>
+<h2>👩‍🏫 👨‍🏫Aula 4</h2>
 
 <p>
 Criação de uma API em spring que seria um projeto que tem como base ser pré configurado, que ao iniciar um projeto não é necesssario configurações como tomcat, gerenciamento de projeto com o maven, é tudo gerenciado por meio de dependências  com suas anotações. O projeto tem com objetivo criar uma API local incialmente para ser consumida a partir do primeiro projeto que foi criado para gerar os stickers, sua busca será por linguagens preferidas, sendo utilizando banco de dados mongoDB, para utilização do banco sendo necessário incluir as denpendencias do mongo no aquivo pom.xml do projeto spring  e  realizado as configurações  para buscar o banco de dados em nuvem.
@@ -191,6 +195,7 @@ Desafio do status code para 201 created teve a alteração do metodo post para  
     <img  src="https://user-images.githubusercontent.com/54903202/229382002-ccb05a9b-2ee7-441d-a749-580e9645ca64.png" width="700" height="350" alt="Terminal Exception">
 </div>
 
+<h2>👩‍🏫 👨‍🏫Aula 5</h2>
 
 
 
@@ -211,4 +216,4 @@ Desafio do status code para 201 created teve a alteração do metodo post para  
  [Paulo Silveira](https://www.linkedin.com/in/paulosilveira/)
  
 
-![GitHub Org's stars](https://img.shields.io/github/stars/tuanemendes?style=social)
+
