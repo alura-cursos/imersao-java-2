@@ -97,13 +97,29 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
     <img  src="https://user-images.githubusercontent.com/54903202/229262393-d900483f-efe2-41e4-90c7-048a42acbcee.png" width="250" height="380" alt="Figura NASA">
 </div>
 
+<h3>🛠Desafios Dia 03</h3>
 
 
+* Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16.<br> 
+* Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP.<br> 
+* Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra.<br> 
+* Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado. 
 
+No desafio de transforma a class para record, foi nessario criar outro contrutor para ter somente dois atribudos pois na record que foi criado  tinha 3 atributos. 
 
+``` java 
+  public record Content(String title,String urlImage,double classification) {
+    
+    public Content(String title, String urlImage) {
+        this(title, urlImage, 0.0); // classificação como padrão 0.0
+    }
+}
 
-
-
+```
+Realização do teste da exception criada.
+<div align="center">
+    <img  src="https://user-images.githubusercontent.com/54903202/229329515-7d66a41d-74ee-4181-a582-30fb86470fa5.png" width="650" height="100" alt="Terminal Exception">
+</div>
 
 <h2>👩‍Desenvolvido Por</h2>
 
