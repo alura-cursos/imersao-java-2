@@ -40,7 +40,7 @@ public class ClientHttp {
 
       } catch (IOException | InterruptedException ex) {  
         // TODO: handle exception
-        throw new RuntimeException(ex);
+        throw new ClientHttpException("Erro ao burcar URL");
       }
 
     }
