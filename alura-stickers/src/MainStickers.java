@@ -12,12 +12,13 @@ public class MainStickers {
         ClientHttp clientHttp = new ClientHttp();
         String json = clientHttp.getlistDados();
         
-        //manipula os dados 
-        ContentExtractorNASA extractorNASA = new ContentExtractorNASA();
-        List<Content> contents = extractorNASA.getContent(json);
+       
+        ContentExtractorNASA extractor = new ContentExtractorNASA();
+        
         //ContentExtractorIMDB extractorIMDB = new ContentExtractorIMDB();
-        //List<Content> contents = extractorIMDB .getContent(json);
 
+        //manipula os dados 
+        List<Content> contents = extractor.getContent(json);
         var generatImage = new StickerGenerator();
         
         //criação do diretorio
