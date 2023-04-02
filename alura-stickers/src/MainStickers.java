@@ -16,6 +16,7 @@ public class MainStickers {
         ContentExtractorNASA extractor = new ContentExtractorNASA();
         
         //ContentExtractorIMDB extractorIMDB = new ContentExtractorIMDB();
+     
 
         //manipula os dados 
         List<Content> contents = extractor.getContent(json);

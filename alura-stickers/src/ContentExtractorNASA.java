@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Map;
 
-public class ContentExtractorNASA {
+public class ContentExtractorNASA implements ContentExtractor{
     public List<Content> getContent(String json){
                
         // extrair dados : parsear os dados  (titulo , poster, classificação),exibir e manipular o dados
