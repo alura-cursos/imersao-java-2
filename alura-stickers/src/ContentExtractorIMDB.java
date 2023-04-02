@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class ContentExtractorIMDB {
+public class ContentExtractorIMDB implements ContentExtractor{
     
 
     public List<Content> getContent(String json){

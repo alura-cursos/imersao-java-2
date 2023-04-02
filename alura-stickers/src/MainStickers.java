@@ -13,10 +13,10 @@ public class MainStickers {
         String json = clientHttp.getlistDados();
         
         //manipula os dados 
-        //ContentExtractorNASA extractorNASA = new ContentExtractorNASA();
-        //List<Content> contents = extractorNASA.getContent(json);
-        ContentExtractorIMDB extractorIMDB = new ContentExtractorIMDB();
-        List<Content> contents = extractorIMDB .getContent(json);
+        ContentExtractor extractorNASA = new ContentExtractorNASA();
+        List<Content> contents = extractorNASA.getContent(json);
+        //ContentExtractor extractorIMDB = new ContentExtractorIMDB();
+        //List<Content> contents = extractorIMDB .getContent(json);
 
         var generatImage = new StickerGenerator();
         
