@@ -19,15 +19,20 @@ public class ClientHttp {
         InputStream  inputStreamConfig = new FileInputStream("config.properties");
         properties.load(inputStreamConfig);
 
+        //buscar a url da API
+        API api = API.NASA_APOD;
+
+
+        
         //filmes
         //String apiKeyImdb = properties.getProperty("IMDB_API_KEY");
-        //String url = "https://imdb-api.com/en/API/Top250Movies/" + apiKeyImdb;
-        //String url = "https://imdb-api.com/en/API/MostPopularMovies/" + apiKeyImdb;
+        //String url = api.getUrl() + apiKeyImdb;
+        //String url = api.getUrl() + apiKeyImdb;
 
         //nasa
         String apiKeyNasa = properties.getProperty("NASA_API_KEY");
         String dateNasa = properties.getProperty("DATA_NASA");
-        String url = "https://api.nasa.gov/planetary/apod?api_key=" + apiKeyNasa + dateNasa;
+        String url = api.getUrl() + apiKeyNasa + dateNasa;
 
         //String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/NASA-APOD.json";
         URI address = URI.create(url);
