@@ -120,6 +120,21 @@ Realização do teste da exception criada.
 <div align="center">
     <img  src="https://user-images.githubusercontent.com/54903202/229329515-7d66a41d-74ee-4181-a582-30fb86470fa5.png" width="650" height="100" alt="Terminal Exception">
 </div>
+ no desafio da criação do enum foi implementado uma lógica se caso for NASA_APOD ele consiga pegar as chaves do aqrquivo de configuração e a  data que esta sendo passa para buscar uma mair quantidade de imagens e não somente do dia. 
+
+ ```java
+         if(api.equals(API.NASA_APOD)){
+            //API Nasa
+            String apiKeyNasa = properties.getProperty("NASA_API_KEY");
+            String dateNasa = properties.getProperty("DATA_NASA");
+            url = api.getUrl() + apiKeyNasa + dateNasa;
+
+        }else{
+            String apiKeyImdb = properties.getProperty("IMDB_API_KEY");
+             url = api.getUrl() + apiKeyImdb;
+        }
+
+ ```
 
 
 <h2>👩‍Desenvolvido Por</h2>
