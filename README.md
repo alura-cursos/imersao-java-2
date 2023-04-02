@@ -170,7 +170,11 @@ Outra ferramenta muito importante para o desenvolvimento é o postman que é  so
     <img  src="https://user-images.githubusercontent.com/54903202/229371928-6686d757-3896-44cf-97dd-d2738eff118b.png" width="700" height="350" alt="Terminal Exception">
 </div>
 
+<h3>🛠Desafios Dia 04</h3>
 
+* Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
+* Devolver a listagem ordenada pelo ranking;
+* Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST; 
 
 
 
