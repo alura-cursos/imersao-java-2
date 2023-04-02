@@ -30,7 +30,7 @@
 <h2>💻 Descrição do Projeto</h2>
 
 <p>
-O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filmes, no qual será utilizada a IMDb-API. 
+O projeto tem como ojetivo de desenvolver uma aplicação  do zero em Java visando teoria por meio da prática amplição de portifólios e da carreira de dev. 
 </p>
 
 <h2>💻Tecnologias Utilizadas</h2>
@@ -47,13 +47,13 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 
 <h2>💻Funcionalidades e Demonstração da Aplicação</h2>
 <p>
-    A inversão são de 5 dias de códificação em java criação de classes, conceitos de herença, polimorfismo, a utilização posterior com a utilização do framework spring com a criação de um API para sser consumida pelo próprio gerador de stickers,   implementação de desafios.  
+    A inversão são de 5 dias de códificação em java criação de classes, conceitos de herença, polimorfismo, a utilização  do framework spring com a criação de uma API para ser consumida pelo próprio gerador de stickers,   implementação de desafios.  
 </p>
 
 <h2>👩‍🏫👨‍🏫Aula 1</h2> 
 <p>
-
-Na primeira aula Foi realizado cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies, o site não funcionava dizendo estar fora do ar como o satus 403, para resolução do problema, foi passado pelo time da alura um link pra buscar os dados e um segunda que encontrei foi utilizar uma VPN  que no qual foi possível acessar a o link do site IMDb-API.
+ 
+Na primeira aula ideia iniciamente é  consumir microserviços de uma  API dos top 250 filmes, no qual será utilizada a IMDb-API. Foi realizado cadatro no site da IMDb-API para conseguir buscar o dados dos Top250Movies, o site não funcionava dizendo estar fora do ar como o satus 403, para resolução do problema, foi passado pelo time da alura um link pra buscar os dados e um segunda que encontrei foi utilizar uma VPN  que no qual foi possível acessar a o link do site IMDb-API.
 Na classe main foi criado a  conexão com o  http para buscar o top 250 filmes. 
 Foi criado uma JsonParser para fazer o processo de separação dos dados. 
 Criado um for para trazer a lista com manipulação do dados titulo , poster, classificação.
