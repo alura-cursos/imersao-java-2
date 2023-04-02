@@ -148,8 +148,9 @@ Realização do teste da exception criada.
 <h2>Pessoas Contribuidoras</h2>
 
  [Time Alura](https://www.alura.com.br/) 💙 <br>
- [Jacqueline Oliveira](https://www.linkedin.com/in/jacqueline-r-oliveira/) <br>
+ 
  [Alexandre Aquiles](https://www.linkedin.com/in/alexandreaquiles/) <br>
+ [Jacqueline Oliveira](https://www.linkedin.com/in/jacqueline-r-oliveira/) <br>
  [Paulo Silveira](https://www.linkedin.com/in/paulosilveira/)
  
 
