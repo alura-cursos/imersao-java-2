@@ -14,7 +14,7 @@ import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
-public class GeradorDeFigurinhas {
+public class StickerGenerator {
 
     public void criarImagem(InputStream inputStream, String nomeArquivo, String texto,InputStream inputImagemSobreposicao) throws Exception {
         // leitura da imagem 
@@ -39,7 +39,7 @@ public class GeradorDeFigurinhas {
         graphics2d.drawImage(imagemSobreposicao, 20, posicaoImgSobreposicaoY,null);
 
         //configurar a fonte 
-        var  fonte = new Font("Impact",Font.BOLD, 140); 
+        var  fonte = new Font("Impact",Font.BOLD, 100); 
         graphics2d.setFont(fonte);
         graphics2d.setColor(Color.ORANGE);
 
