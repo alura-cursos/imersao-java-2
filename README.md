@@ -28,7 +28,7 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 
 <h2>💻Tecnologias Utilizadas</h2>
 
-✅ Editor de código VsCode<br>
+✅ Editor de código [VsCode](https://code.visualstudio.com/?wt.mc_id=vscom_downloads)<br>
 ✅ [Coding Pack para Java](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java)<br> 
 ✅ [Proton VPN](https://protonvpn.com/) <br> 
 ✅ [IMDb-API](https://imdb-api.com/api)(*obs: VPN ligada) <br>
@@ -90,12 +90,13 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 <p>
  Aula de refatoração do código com foco em orientação obejtos para deixar mais seguro, manutenivel e organizado para  gerar  facilidade para outros                  desenvolvedores conseguir entender o código, foi separado as seguintes classes:
 </p>
+
  <div align="center">
     <img  src="https://user-images.githubusercontent.com/54903202/229262211-24ebcb77-70cd-4037-bb74-9a987aafde37.png"  alt="Classes Java">
 </div>
    
 <p>
-   Com essa refatoração sendo possivel utilização de outras API pra gerar outros stickers como foi utilizado a API da NASA. 
+   Com essa refatoração sendo possível utilização de outras API pra gerar outros stickers como foi utilizado a API da NASA. 
 </p>
 
 <div align="center">
@@ -110,7 +111,10 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 * Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra.<br> 
 * Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado. 
 
+<p>
 No desafio de transformar a class para record, foi necessário criar outro construtor para ter somente dois atribudos pois na record que foi criado tinha três atributos. 
+</p>
+
 
 ``` java 
   public record Content(String title,String urlImage,double classification) {
@@ -121,11 +125,18 @@ No desafio de transformar a class para record, foi necessário criar outro const
 }
 
 ```
+
+<p>
 Realização do teste da exception criada.
+</p>
+
 <div align="center">
     <img  src="https://user-images.githubusercontent.com/54903202/229329515-7d66a41d-74ee-4181-a582-30fb86470fa5.png" width="650" height="100" alt="Terminal Exception">
 </div>
+
+<p>
  No desafio na criação do enum foi implementado uma lógica se caso for NASA_APOD ele consiga pegar as chaves do arquivo de configuração e a data que esta sendo passada para buscar mais  imagens e não somente do dia. 
+</p>
 
  ```java
          if(api.equals(API.NASA_APOD)){
@@ -140,17 +151,23 @@ Realização do teste da exception criada.
         }
 
  ```
+ 
 <h2>Aula 4</h2>
-Criação de uma API em spring que seria um projeto que tem como base ser pré configurado, que ao iniciar um projeto não é necesssario configurações como tomcat, gerenciamento de projeto com o maven, é tudo gerenciado por meio de dependências  com suas anotações. O projeto tem com objetivo criar uma API local incialmente para ser consumida a partir do primeiro projeto que foi criado para gerar os stickers, sua busca será por linguagens preferidas, sendo utilizando banco de dados mongoDB, para utilização do banco sendo necessário incluir as denpendencias do mongo no aquivo pom.xml do projeto spring  e  realizado as configurações  para buscar o banco de dados em nuvem, 
+
+<p>
+Criação de uma API em spring que seria um projeto que tem como base ser pré configurado, que ao iniciar um projeto não é necesssario configurações como tomcat, gerenciamento de projeto com o maven, é tudo gerenciado por meio de dependências  com suas anotações. O projeto tem com objetivo criar uma API local incialmente para ser consumida a partir do primeiro projeto que foi criado para gerar os stickers, sua busca será por linguagens preferidas, sendo utilizando banco de dados mongoDB, para utilização do banco sendo necessário incluir as denpendencias do mongo no aquivo pom.xml do projeto spring  e  realizado as configurações  para buscar o banco de dados em nuvem.
+</p>
 
 <div align="center">
     <img  src="https://user-images.githubusercontent.com/54903202/229370710-e52f1043-f24f-41e2-97bf-eb016d6077a2.png" width="250" height="380" alt="Figura Linguagem">
 </div>
 
-Outra ferramenta muito importante para o desenvolvimento é o postman que é  software para realizar  busca de dados, inserir, deletar por meio dos endopoints da aplicação, ele possui uma  gama de funcionalidades para reliazar testes em uma API.  
+<p>
+Outra ferramenta muito importante para o desenvolvimento é o postman que é  software para realizar  busca de dados, inserir, deletar por meio dos endopoints da aplicação, ele possui uma gama de funcionalidades para realizar testes em uma API.  
+</p>
 
 <div align="center">
-    <img  src="https://user-images.githubusercontent.com/54903202/229371928-6686d757-3896-44cf-97dd-d2738eff118b.png" width="650" height="400" alt="Terminal Exception">
+    <img  src="https://user-images.githubusercontent.com/54903202/229371928-6686d757-3896-44cf-97dd-d2738eff118b.png" width="700" height="350" alt="Terminal Exception">
 </div>
 
 
