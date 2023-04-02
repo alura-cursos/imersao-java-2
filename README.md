@@ -31,7 +31,12 @@ O projeto tem como ojetivo consumir microserviços de uma  API dos top 250 filme
 ✅ Editor de código VsCode<br>
 ✅ [Coding Pack para Java](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java)<br> 
 ✅ [Proton VPN](https://protonvpn.com/) <br> 
-✅ [IMDb-API](https://imdb-api.com/api)
+✅ [IMDb-API](https://imdb-api.com/api)(*obs: VPN ligada) <br>
+✅ [NASA-API](https://api.nasa.gov/) <br>
+✅ [Spring Initializr](https://start.spring.io/) <br>
+✅ [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try4?utm_content=rlsavisitor&utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122172&cq_cmp=14412646314&gclid=Cj0KCQjwz6ShBhCMARIsAH9A0qV-auOAO9-3MF2jGsKldDiosvvrVpqEfJQHYB5xz-peXjLt4-oY8WQaAmlBEALw_wcB)<br>
+✅ [Postman](https://www.postman.com/downloads/)
+
 
 <h2>💻Funcionalidades e Demonstração da Aplicação</h2>
 <p>
@@ -135,6 +140,21 @@ Realização do teste da exception criada.
         }
 
  ```
+<h2>Aula 4</h2>
+Criação de uma API em spring que seria um projeto que tem como base ser pré configurado, que ao iniciar um projeto não é necesssario configurações como tomcat, gerenciamento de projeto com o maven, é tudo gerenciado por meio de dependências  com suas anotações. O projeto tem com objetivo criar uma API local incialmente para ser consumida a partir do primeiro projeto que foi criado para gerar os stickers, sua busca será por linguagens preferidas, sendo utilizando banco de dados mongoDB, para utilização do banco sendo necessário incluir as denpendencias do mongo no aquivo pom.xml do projeto spring  e  realizado as configurações  para buscar o banco de dados em nuvem, 
+
+<div align="center">
+    <img  src="https://user-images.githubusercontent.com/54903202/229370710-e52f1043-f24f-41e2-97bf-eb016d6077a2.png" width="250" height="380" alt="Figura Linguagem">
+</div>
+
+Outra ferramenta muito importante para o desenvolvimento é o postman que é  software para realizar  busca de dados, inserir, deletar por meio dos endopoints da aplicação, ele possui uma  gama de funcionalidades para reliazar testes em uma API.  
+
+<div align="center">
+    <img  src="https://user-images.githubusercontent.com/54903202/229371928-6686d757-3896-44cf-97dd-d2738eff118b.png" width="650" height="400" alt="Terminal Exception">
+</div>
+
+
+
 
 
 <h2>👩‍Desenvolvido Por</h2>

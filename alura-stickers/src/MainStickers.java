@@ -16,16 +16,18 @@ public class MainStickers {
         properties.load(inputStreamConfig);
 
         //buscar a url da API
-        API api = API.NASA_APOD;
+        API api = API.LANGUAGE;
         String url;
         if(api.equals(API.NASA_APOD)){
             //API Nasa
             String apiKeyNasa = properties.getProperty("NASA_API_KEY");
             String dateNasa = properties.getProperty("DATA_NASA");
             url = api.getUrl() + apiKeyNasa + dateNasa;
-        }else{
+        }else if(api.equals(API.IMDB_TOP_MOVIES) | api.equals(API.IMDB_MOST_POPULAR)){
             String apiKeyImdb = properties.getProperty("IMDB_API_KEY");
              url = api.getUrl() + apiKeyImdb;
+        }else{
+             url = api.getUrl();
         }
     
         ContentExtractor extractor = api.getExtractor();
@@ -60,7 +62,7 @@ public class MainStickers {
             
             String textoFigurinha;
             InputStream myImage;
-            if(content.classification() >= 8.0){
+            if(content.classification() >= 7.0){
                 textoFigurinha = textoSaudacao + " HYPOU";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-muito-feliz.png"));
             }else if(content.classification() <= 6.0){
