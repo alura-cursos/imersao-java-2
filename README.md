@@ -121,6 +121,7 @@ Realização do teste da exception criada.
     <img  src="https://user-images.githubusercontent.com/54903202/229329515-7d66a41d-74ee-4181-a582-30fb86470fa5.png" width="650" height="100" alt="Terminal Exception">
 </div>
 
+
 <h2>👩‍Desenvolvido Por</h2>
 
 
