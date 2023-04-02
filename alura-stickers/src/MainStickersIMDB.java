@@ -74,9 +74,9 @@ public class MainStickersIMDB {
             gerarImagem.criarImagem(inputStream, nomeArquivo,textoFigurinha,myImage);
 
            // System.out.println(filme.get("title"));
-            System.out.println(filme.get("image"));
+            System.out.println(filme.get("image").replaceAll("(@+)(.*).jpg$","$1.jpg"));
             System.out.println("\u001b[38;2;255;255;255m\u001b[48;2;42;100;228m -> Título:\u001b[m" + titulo);
-            System.out.println(" -> Clasificação: "+filme.get("imDbRating"));
+            System.out.println(" -> Clasificação: " +filme.get("imDbRating"));
             int estrelas = (int) classificacao;
             
             for (int j = 1; j <= estrelas; j++) {
@@ -85,7 +85,7 @@ public class MainStickersIMDB {
                
             }
             System.out.println("\n");
-            System.out.println("");
+            System.out.println("by tutu");
         }
 
         
