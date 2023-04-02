@@ -16,14 +16,13 @@ public class MainStickers {
         properties.load(inputStreamConfig);
 
         //buscar a url da API
-        API api = API.NASA_APOD;
+        API api = API.IMDB_MOST_POPULAR;
         String url;
         if(api.equals(API.NASA_APOD)){
             //API Nasa
             String apiKeyNasa = properties.getProperty("NASA_API_KEY");
             String dateNasa = properties.getProperty("DATA_NASA");
             url = api.getUrl() + apiKeyNasa + dateNasa;
-
         }else{
             String apiKeyImdb = properties.getProperty("IMDB_API_KEY");
              url = api.getUrl() + apiKeyImdb;
