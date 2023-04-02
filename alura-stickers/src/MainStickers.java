@@ -27,8 +27,8 @@ public class MainStickers {
         for ( int i = 0 ; i < 7; i++ ) {
             Content content = contents.get(i);
 
-            InputStream inputStream = new URL(content.getUrlImage()).openStream();
-            String nomeArquivo = "stickers/" + content.getTitle() + ".png";
+            InputStream inputStream = new URL(content.urlImage()).openStream();
+            String nomeArquivo = "stickers/" + content.title() + ".png";
 
             LocalTime horaAtual = LocalTime.now();
             String textoSaudacao;
@@ -43,10 +43,10 @@ public class MainStickers {
             
             String textoFigurinha;
             InputStream myImage;
-            if(content.getClassification() >= 8.0){
+            if(content.classification() >= 8.0){
                 textoFigurinha = textoSaudacao + " HYPOU";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-muito-feliz.png"));
-            }else if(content.getClassification() <= 6.0){
+            }else if(content.classification() <= 6.0){
                 textoFigurinha = textoSaudacao + " DE BOA";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-feliz.png"));
             }else{
