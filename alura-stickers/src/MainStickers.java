@@ -63,13 +63,13 @@ public class MainStickers {
             String textoFigurinha;
             InputStream myImage;
             if(content.classification() >= 7.0){
-                textoFigurinha = textoSaudacao + " HYPOU";
+                textoFigurinha = textoSaudacao + " LACROU";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-muito-feliz.png"));
             }else if(content.classification() <= 6.0){
-                textoFigurinha = textoSaudacao + " DE BOA";
+                textoFigurinha = textoSaudacao + " MÓ DE BOAS";
                 myImage = new FileInputStream(new File("img-sobreposicao/gatinho-feliz.png"));
             }else{
-                textoFigurinha = textoSaudacao + " FLOPOU";
+                textoFigurinha = textoSaudacao + " DEU RUIM ";
                 myImage = new FileInputStream( new File("img-sobreposicao/gatinho-marrento.png"));
             }
             generatImage.criarImagem(inputStream, nomeArquivo,textoFigurinha,myImage);
