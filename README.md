@@ -196,8 +196,35 @@ Desafio do status code para 201 created teve a alteração do metodo post para  
 </div>
 
 <h2>👩‍🏫 👨‍🏫Aula 5</h2>
+Publicação da API no cloud 
 
+<p>
+Criação de um arquivo docker file  publicar a imagem no docker hub 
+</p>
 
+```docker
+FROM openjdk:17-jdk-alpine
+VOLUME /tmp
+ARG JAVA_OPTS
+ENV JAVA_OPTS=$JAVA_OPTS
+COPY target/languages-api-0.0.1-SNAPSHOT.jar languagesapi.jar
+EXPOSE 8080
+ENTRYPOINT exec java $JAVA_OPTS -jar languagesapi.jar
+# For Spring-Boot project, use the entrypoint below to reduce Tomcat startup time.
+#ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar languagesapi.jar
+
+```
+
+<p>
+Criação da conta no Fly.oi para fazer o deploy do projeto para rodar em cloud.
+</p>
+<div align="center">
+    <img  src="https://user-images.githubusercontent.com/54903202/229656160-92ef3507-a7e7-4e2e-8179-341c575a9c1a.png
+" width="700" height="350" alt="fly.io">
+</div>
+
+Deploy finalizado com sucesso!
+[languages-api](https://language-api-alura.fly.dev/languages)
 
 <h2>👩‍Desenvolvido Por</h2>
 
